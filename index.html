@@ -10,16 +10,16 @@
         <script src="./index.js"></script>
     </head>
     <body>
-        <form class="form">
+        <div class="form">
             <h1>בקשה לאישור מעלית יומי</h1>
             <label for="solider-num">הכנס מספר אישי:</label>
-            <input type="text" id="solider-num" name="solider-num">
+            <input type="text" id="solider-num" name="solider-num" required>
             <label for="reason">סיבת שימוש במעלית:</label>
-            <input type="text" id="reason" name="reason">
+            <input type="text" id="reason" name="reason" required>
             <label for="rank">דרגה:</label>
-            <input type="text" id="rank" >
+            <input type="text" id="rank" required>
             <button id="submit">לאישור</button>
             <!-- <button id="allow" class="allow"></button> -->
-        </form>
+        </div>
     </body>
 </html>
