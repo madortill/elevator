@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./endStyle.css">
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div>ממתין לאישור...</div>
+        <div class="donut"></div>
+    </div>
+    <div class="approved" id="approved">
+        <h1>בקשה לאישור מעלית יומי</h1>
+        <div>מספר אישור: <span id="randomNum"></span></div>
+        <img alt="QR-code" class="qrcode" src="qrcode.jpeg" />
+    </div>
+    <script>
+        function getRandomArbitrary(min, max) {
+            return Math.random() * (max - min) + min;
+        }
+
+        let date = new Date();
+        date = date.getTime();
+        setTimeout(() => {
+            document.getElementById('container').classList.add("none");
+            document.getElementById('approved').classList.remove('none');
+            document.getElementById('randomNum').innerText = String(date).slice(8);
+        }, getRandomArbitrary(1000, 5000))
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
+
+body, html {
+    margin: 0;
+    direction: rtl;
+    background-color: #f6e467;
+}
+* {
+    font-family: 'Assistant';
+    font-size: 1.2rem;
+}
+.donut {
+    width: 4rem;
+    height: 4rem;
+    margin: 2rem;
+    border-radius: 50%;
+    border: 0.5rem solid #ffffff83;
+    border-top-color: #828282db;
+    animation: 1.5s spin infinite linear;
+}
+
+.container, .approved {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    flex-direction: column;
+}
+
+.qrcode {
+    max-width: 80vw;
+    max-height: 40%;
+    margin-top: 1.5rem;
+}
+
+.none {
+    display: none;
+}
+
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
