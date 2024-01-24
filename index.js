@@ -1,11 +1,8 @@
 window.addEventListener("load", () => {
-    document.getElementById('submit', finish);
-    if (window.location.href === "end.html") {
-        
-    }
+    document.getElementById('submit').addEventListener('click', finish);
 })
 
 const finish = (event) => {
     event.preventDefault();
-    window.location.href = "end.html"
+    window.location.href = "./end.html"
 }

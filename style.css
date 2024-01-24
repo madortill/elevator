@@ -24,7 +24,7 @@ button {
     width: 5rem;
 }
 
-form {
+.form {
     display: flex;
     flex-direction: column;
     align-items: center;
